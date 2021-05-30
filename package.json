@@ -1,0 +1,21 @@
+{
+  "name": "hand_track",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js",
+    "lint": "eslint src/*",
+    "lint:fix": "eslint src/* --fix"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0"
+  }
+}
