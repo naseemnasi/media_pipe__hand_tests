@@ -1,21 +1,24 @@
 {
-  "name": "hand_track",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "hand-tracker",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node app.js",
-    "lint": "eslint src/*",
-    "lint:fix": "eslint src/* --fix"
-    
+    "start": "node app.js",
+    "dev": "nodemon --watch app --watch src/* app.js",
+    "lint": "eslint src/*/*.js ",
+    "lint:fix": "eslint src/*/*.js --fix"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "eslint": "^7.27.0"
+    "@mediapipe/hands": "^0.3.1620248595",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "~4.16.1",
+    "express-oas-generator": "^1.0.37",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.7"
   }
 }
